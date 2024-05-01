@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16.3)
 
-project(cdg)
+project(Radon)
 
 # Compile options
 set(CMAKE_C_COMPILER "gcc")
@@ -20,6 +20,8 @@ else(${CMAKE_BUILD_TYPE} STREQUAL RELEASE)
     message("Optional:-fno-asm -std=c++11 -Wall -stdlib=libstdc++ -O2, Type:Release")
 endif(${CMAKE_BUILD_TYPE} STREQUAL DEBUG)
 
+include_directories(include)
+include_directories(include/Graph)
 add_subdirectory(src)
 
 # Install options
@@ -33,7 +35,7 @@ install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/
         DESTINATION include)
 
 # Executable files
-install(TARGETS cdg
+install(TARGETS radon
         RUNTIME DESTINATION bin)
 
 # add_executable(treeTest test/treeTest.cpp)

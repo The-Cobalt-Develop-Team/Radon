@@ -1,10 +1,10 @@
-# C++ Data Generator
+# Radon Project
 
-An open-source cross-platform data generator 
+An open-source cross-platform random data generator 
 
 ## 说明:
 
-这是一个使用C++编写的随机数据生成库，您可以使用该随机生成库生成图论算法等随机数据。
+这是一个使用C++编写的随机数据生成库，您可以使用该随机生成库生成图论算法等随机数据，同时，该库将会提供部分stl随机函数的拓展。
 
 安装方法：
 
@@ -20,7 +20,7 @@ git clone https://github.com/AndyShen2006/cdg.git
 
 然后依次执行一下命令以执行编译(以Linux为例,Windows基本类似)
 ```
-cd cdg/
+cd Radon/
 mkdir build/
 cd build/
 cmake ..
@@ -28,7 +28,8 @@ make
 sudo make install
 ```
 
-Copyright (C) 2022  Andy Shen
+```
+Copyright (C) 2022-2024  Andy Shen
 
 This program is free software: you can redistribute it 
 and/or modify it under the terms of the GNU General Public License as 
@@ -43,3 +44,4 @@ See the GNU General Public License for more details.
 You should have received a copy of the GNU General 
 Public License along with this program.  If not, see <https://www.gnu.
 org/licenses/>.
+```
